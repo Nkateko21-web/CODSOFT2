@@ -1,0 +1,217 @@
+/* Resetting some default styles */
+body, h1, h2, h3, p, button {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Basic styles */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f0f0f0;
+}
+
+header {
+    background-color: #f8b400;
+    color: white;
+    padding: 20px;
+}
+
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-left h1 {
+    margin: 0;
+}
+
+.header-right ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+}
+
+.header-right ul li {
+    margin: 0 10px;
+}
+
+.header-right ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.hero {
+    position: relative;
+    background-image: url('../PICS/AdobeStock_583966763_Preview.jpeg');
+    background-size: cover;
+    background-position: center;
+    height: 100vh; /* Full height */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-align: center;
+}
+
+.hero-text {
+    background: rgba(0, 0, 0, 0.5); /* Slightly transparent background for text */
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.hero h2 {
+    margin-bottom: 20px;
+    font-size: 2em;
+}
+
+.get-started {
+    background-color: #f8b400;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 1em;
+    border-radius: 5px;
+}
+
+.content {
+    display: flex;
+    justify-content: space-around;
+    padding: 40px 20px;
+}
+
+.column {
+    width: 45%;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.service-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.service-item {
+   display: flex;
+   justify-content: space-between;
+   gap: 20px;
+}
+
+.service-item {
+    flex: 1 1 30%;
+    text-align: center;
+    background-color: #fff;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.image-container {
+    position: relative;
+    margin-bottom: 10px;
+}
+
+.image-container img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.price-tag {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: rgba(0, 0, 0, 0.7);
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 1.2em;
+}
+
+#about {
+    padding-top:  20px;
+}
+
+.about-text {
+    position: relative;
+}
+
+.more-text {
+    display: none;
+    margin-top: 10px;
+}
+
+.read-more-label {
+    display: block;
+    background-color: #f8b400;
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 1em;
+    border-radius: 5px;
+    text-align: center;
+    margin-top: 10px;
+    width: fit-content;
+}
+
+.read-more-toggle {
+    display: none;
+}
+
+.read-more-toggle:checked ~ .more-text {
+    display: block;
+    margin-top: 20px;
+}
+.read-more-toggle:checked + .read-more-label::after {
+    content: ' Read Less';
+}
+
+.read-more-toggle:checked + .about-text .more-text {
+    display: block;
+}
+
+.read-more-label::after {
+    content: ' Read More';
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+.contact-icons-footer, .contact-icons-footer {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
+.contact-icons-footer a, .contact-icons a {
+    color: white;
+    margin: 0 10px;
+    font-size: 1.5em;
+    text-decoration: none;
+}
+
+.contact-icons-footer .icon {
+    color: white;
+    font-size: 1.5em;
+    text-decoration: none;
+}
+
+.contact-icons-footer p, .contact-icons p {
+    margin: 0;
+    font-size: 1.2em;
+}
